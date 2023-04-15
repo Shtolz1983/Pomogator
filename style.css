@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+object {
+    width: 18px;
+    height: 18px;
+}
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.logo {
+    position: relative;
+    top: 44px;
+    width: 385px;
+    height: 52px;
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: #ab2020;
+    padding-top: 44px;
+    padding-bottom: 86px;
+
+}
+
+.forma {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 86px;
+    width: 500px;
+    height: 56px;
+    box-sizing: border-box;
+    border: 2px solid #111111;
+    border-radius: 14px;
+}
+
+.input-text {
+    width: 471px;
+    height: 50px;
+    padding-left: 21px;
+    font-size: 18px;
+    font-family: "IBM Plex Mono";
+    border: none;
+    outline: none;
+    border-radius: 14px;
+}
+
+.submitButton {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    width: 107px;
+    height: 38.08px;
+    background-color: #111111;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+    
+}
+
+.out-text {
+    width: 471px;
+    height: 50px;
+    padding-left: 21px;
+    font-size: 18px;
+    font-family: "IBM Plex Mono";
+    border: 1px solid #111111;
+    border-radius: 14px;
+}
+
+.answer{
+    margin-top: 60px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.level {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    height: 60px;
+    border-radius: 14px;
+}
+
+#quantity {
+    width: 40px;
+    height: 40px;
+}
+
+.submitButtonLevel {
+    width: 107px;
+    height: 38.08px;
+    background-color: #111111;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+    
+}
