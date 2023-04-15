@@ -20,8 +20,8 @@ async function response(question, temper = 1) {
     const response = await openai.createCompletion({
       model: "text-davinci-003",
       prompt: question,
-      temperature: temper,
       max_tokens: 2000,
+      temperature: temper,
     });
     return response;
   } catch (e) {

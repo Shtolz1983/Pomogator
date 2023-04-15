@@ -13,6 +13,12 @@ module.exports = {
     path: DIST_DIR,
     filename: "index_bundle.js",
   },
-  plugins: [new Dotenv(), new HtmlWebpackPlugin()],
-  mode: "production",
+  plugins: [
+    new Dotenv(),
+    new HtmlWebpackPlugin({
+      title: "Pomogator",
+      template: SRC_DIR + "/index.html",
+    }),
+  ],
+  mode: "development",
 };

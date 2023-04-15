@@ -1,19 +1,26 @@
 import { response } from "./openaiAPI/response.js";
-const textQuestion = document.querySelector("[name='question']");
-const btnQuestion = document.querySelector(".btn_question");
-const textAnswer = document.querySelector(".code");
 
-console.log(textAnswer);
+const form = document.querySelector("form[name=addWord]");
+const btnQuestion = document.getElementById("submitButtonQue");
+const textAnswer = document.getElementById("out-text");
 
-function createElement(answer, el) {
-  el.innerHTML = answer;
+function getLevel(event) {
+  event.preventDefault();
+  const form = document.querySelector("form[name=addWord]");
+  const input = form.querySelector("input[name=quantity]");
+  return input.value;
 }
+
+form.addEventListener("submit", getLevel);
 
 btnQuestion.addEventListener("click", async (event) => {
   event.preventDefault();
-  if (textQuestion.value) {
-    const res = await response(textQuestion.value);
-    console.log(res.data);
-    createElement(res.data.choices[0].text, textAnswer);
+
+  const formText = document.querySelector("form[name=add-newWord]");
+  const inputText = formText.querySelector("input[name=text]");
+  const textQuestion = inputText.value;
+  if (textQuestion) {
+    const res = await response(textQuestion);
+    textAnswer.innerHTML = res.data.choices[0].text;
   }
 });
