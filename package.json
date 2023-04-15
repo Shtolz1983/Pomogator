@@ -1,0 +1,38 @@
+{
+  "name": "extra-js-bot",
+  "version": "1.0.0",
+  "description": "Создай несложный бот, используя все инструменты, которые вы изучили за фазу 0.",
+  "main": "script.js",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "dotenv-webpack": "^8.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shtolz1983/extra-js-bot.git"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shtolz1983/extra-js-bot/issues"
+  },
+  "homepage": "https://github.com/Shtolz1983/extra-js-bot#readme"
+}
