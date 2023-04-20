@@ -1,123 +1,106 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fira+Code:wght@300&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Roboto+Mono:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Source+Code+Pro:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+  font-family: "Fira Code", monospace;
+  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Source Code Pro", monospace;
+  font-family: "IBM Plex Mono", monospace;
 }
 
-
-
-object {
-    width: 18px;
-    height: 18px;
-}
-main{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: black; */
 }
 
-
-
-.logo {
-    position: relative;
-    top: 44px;
-    width: 385px;
-    height: 52px;
-    font-family: "IBM Plex Mono";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    text-align: center;
-    color: #ab2020;
-    padding-top: 44px;
-    padding-bottom: 86px;
-
+header {
+  width: 100vw;
+  height: 10vh;
+  font-size: 2rem;
+  padding-top: 3vh;
+  text-align: center;
+  color: rgb(0, 0, 0);
 }
 
-.forma {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    margin-top: 86px;
-    width: 500px;
-    height: 56px;
-    box-sizing: border-box;
-    border: 2px solid #111111;
-    border-radius: 14px;
+main {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+form {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.input-text {
-    width: 471px;
-    height: 50px;
-    padding-left: 21px;
-    font-size: 18px;
-    font-family: "IBM Plex Mono";
-    border: none;
-    outline: none;
-    border-radius: 14px;
-}
-
-.submitButton {
-    position: absolute;
-    top: 7px;
-    right: 8px;
-    width: 107px;
-    height: 38.08px;
-    background-color: #111111;
-    border-radius: 8px;
-    color: #FFFFFF;
-    font-family: "IBM Plex Mono";
-    font-style: normal;
-    font-weight: 400;
-    border: none;
-    
-}
-
-.out-text {
-    width: 471px;
-    height: 50px;
-    padding-left: 21px;
-    font-size: 18px;
-    font-family: "IBM Plex Mono";
-    border: 1px solid #111111;
-    border-radius: 14px;
-}
-
-.answer{
-    margin-top: 60px;
-    width: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
-
-.level {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 400px;
-    height: 60px;
-    border-radius: 14px;
+textarea[name="question"] {
+  width: 90vw;
+  height: 15vh;
+  font-size: 1rem;
+  background-color: black;
+  color: rgb(243, 239, 17);
+  border: 2px solid red;
+  border-radius: 8px;
+  padding: 5px;
 }
 
 #quantity {
-    width: 40px;
-    height: 40px;
+  width: 20vw;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
 }
 
-.submitButtonLevel {
-    width: 107px;
-    height: 38.08px;
-    background-color: #111111;
-    border-radius: 8px;
-    color: #FFFFFF;
-    font-family: "IBM Plex Mono";
-    font-style: normal;
-    font-weight: 400;
-    border: none;
-    
+.btn_question {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90vw;
+  height: 5vh;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* 
+.main_answer {
+  width: 90vw;
+  height: 60vh;
+  border: 2px solid greenyellow;
+  padding: 5px;
+  border-radius: 8px;
+  color: beige;
+} */
+
+.answer {
+  /* width: 90vw;
+  height: 65vh;
+  font-size: 0.8rem;
+  background-color: black;
+  color: aliceblue;
+  border: 2px solid greenyellow;
+  border-radius: 8px;
+  padding: 5px;
+  text-align: justify;
+  padding: 5px; */
+}
+.main_answer {
+  width: 90vw;
+  height: 400px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  float: right;
+  /* text-align: justify; */
 }
