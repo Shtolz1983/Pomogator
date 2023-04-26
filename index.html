@@ -10,6 +10,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script src="input.js" defer></script>
   </head>
   <body>
     <div class="container-sm">
@@ -24,14 +25,17 @@
             aria-label="Default select example"
           ></select>
           <div class="input-group">
-            <span class="input-group-text">With textarea</span>
             <textarea
               class="form-control js-textarea"
               aria-label="With textarea"
             ></textarea>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Начать</button>
+        <button id="start" type="submit" class="btn btn-success">start</button>
+        <button id="pause" type="submit" class="btn btn-secondary">
+          pause
+        </button>
+        <button id="stop" type="submit" class="btn btn-danger">stop</button>
       </form>
     </div>
 

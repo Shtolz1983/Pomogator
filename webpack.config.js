@@ -8,10 +8,10 @@ const SRC_DIR = path.resolve(__dirname, "./");
 const DIST_DIR = path.resolve(__dirname, "./dist");
 
 module.exports = {
-  entry: SRC_DIR + "/output.js",
+  entry: SRC_DIR + "/src/controller.js",
   output: {
     path: DIST_DIR,
-    filename: "output_bundle.js",
+    filename: "index_bundle.js",
   },
   plugins: [
     new Dotenv(),

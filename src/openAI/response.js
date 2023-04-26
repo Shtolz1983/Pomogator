@@ -7,7 +7,7 @@ class CustomFormData extends FormData {
 }
 
 const configuration = new Configuration({
-  organization: "org-7wXMl4JgsGdorSTaimF0ipHq",
+  organization: process.env.ORGANIZATION,
   apiKey: process.env.OPENAI_API_KEY,
   formDataCtor: CustomFormData,
 });
@@ -29,12 +29,12 @@ async function responseWhisper(buffer, language = "en") {
   }
 }
 
-async function responseChatGPT(text) {
+async function responseChatGPT(messages) {
   try {
-    const response = await openai.createCompletion({
-      model: "text-davinci-003",
-      prompt: text,
-      max_tokens: 2000,
+    const response = await openai.createChatCompletion({
+      model: "gpt-3.5-turbo",
+      messages: messages,
+      // max_tokens: 2000,
     });
     return response;
   } catch (e) {
